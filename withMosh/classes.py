@@ -1,18 +1,20 @@
+class Mamal:
+    def walk(self):
+        print("walk")
 
-class Point:
+class Dog(Mamal):
+    def bark(self):
+        print("Bark")
 
-    def _init_(self, x,y):
-        self.x = x
-        self.y = y
-    
-    def move(self):
-        print("Move")
-    
-    def draw(self):
-        print("Draw")
+class Cat(Mamal):
+    def meow(self):
+        print("Meow")
 
+newDog = Dog()
+newCat = Cat()
 
-newPoint = Point()
+newDog.walk()
+newDog.bark()
 
-newPoint.draw()
-newPoint.move()
+newCat.walk()
+newCat.meow()
